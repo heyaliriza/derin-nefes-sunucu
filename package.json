@@ -1,0 +1,17 @@
+{
+  "name": "derin-nefes-sunucu",
+  "version": "1.0.0",
+  "description": "Derin Nefes oyununda Arkadaşla Oyna için oda sunucusu",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "8.18.0"
+  }
+}
