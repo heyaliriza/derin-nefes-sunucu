@@ -1,7 +1,7 @@
 {
   "name": "derin-nefes-sunucu",
   "version": "1.0.0",
-  "description": "Derin Nefes oyununda Arkadaşla Oyna için oda sunucusu",
+  "description": "Derin Nefes oyununda Arkadaşla Oyna ve liderlik tablosu için sunucu",
   "main": "server.js",
   "private": true,
   "scripts": {
@@ -12,6 +12,7 @@
     "node": ">=18"
   },
   "dependencies": {
+    "pg": "8.23.0",
     "ws": "8.18.0"
   }
 }

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Derin Nefes Gizlilik Politikası</title>
+<style>
+  :root { --bg: #f4f8fb; --fg: #13263a; --muted: #4d6378; --accent: #0b6fa4; --card: #ffffff; --line: #d5e2ec; color-scheme: light; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #06182b; --fg: #e3eef7; --muted: #9db4c8; --accent: #6cc8f5; --card: #0c2440; --line: #1d3a5a; color-scheme: dark; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px max(18px, env(safe-area-inset-right)) 56px max(18px, env(safe-area-inset-left)); }
+  h1 { font-size: 1.7rem; line-height: 1.25; margin: 0 0 4px; text-wrap: balance; }
+  h2 { font-size: 1.08rem; margin: 30px 0 6px; color: var(--accent); }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.2em; }
+  .tarih { color: var(--muted); margin: 0 0 22px; }
+  .kutu { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; }
+  .dil { float: right; font-size: .9rem; }
+  a { color: var(--accent); }
+  .eposta { font-weight: 600; word-break: break-all; }
+</style>
+</head>
+<body>
+<main>
+  <a class="dil" href="privacy.html">English</a>
+  <h1>Derin Nefes Gizlilik Politikası</h1>
+  <p class="tarih">Son güncelleme: 27 Ekim 2026</p>
+
+  <div class="kutu">
+    <p><strong>Kısaca:</strong> Derin Nefes hesap istemez, gerçek adını, e-postanı, konumunu ya da rehberini sormaz; reklam, analiz
+    veya izleme aracı içermez. Oyun ilerlemen yalnızca telefonunda durur. İnternete yalnızca iki iş için bağlanır:
+    "Arkadaşla Oyna"da maçı arkadaşının telefonuna taşımak (bunlar saklanmaz) ve liderlik tablosu için skorunu
+    göndermek (rastgele bir oyuncu kimliği, seçtiğin takma ad ve skorun saklanır).
+    Skor göndermeyi Liderlik ekranından kapatabilir, gönderdiğin skorları oradan tek dokunuşla silebilirsin.</p>
+  </div>
+
+  <h2>Bu politika neyi kapsar</h2>
+  <p>Bu sayfa Android için "Derin Nefes" oyununu (paket adı <code>com.derinnefes.oyun</code>) ve oyunun tarayıcı
+  sürümünü kapsar. "Biz" ifadesi oyunun geliştiricisini anlatır.</p>
+
+  <h2>Telefonunda kalan bilgiler</h2>
+  <p>Seviyeler, yıldızlar, inciler, dolap seçimlerin, istatistiklerin ve ayarların yalnızca cihazındaki oyun kayıt
+  dosyasında tutulur. Bu dosya bize gönderilmez ve Google yedeklemesine de alınmaz. Oyunu sildiğinde kayıt da silinir.</p>
+
+  <h2>Arkadaşla Oyna (internetten oyun)</h2>
+  <p>Bu özelliği açtığında oyun, maçı iki oyuncu arasında taşıyan oda sunucumuza şifreli bir bağlantıyla (WSS/TLS)
+  bağlanır. Sunucu Render (render.com) altyapısında çalışır. Gönderilenler yalnızca şunlardır:</p>
+  <ul>
+    <li>4 harfli oda kodu,</li>
+    <li>oyun her açıldığında yeniden üretilen rastgele bir bağlantı kimliği (cihazına ya da sana bağlı değildir),</li>
+    <li>karakterinin görünüşü (kıyafet, şapka, evcil hayvan, renk),</li>
+    <li>maç mesajları: hamlenin şifreli özeti, tur sonunda açılan hamle, bahis, hazır ifadeler (baloncuk dili) ve
+      rövanş isteği.</li>
+  </ul>
+  <p>Bu bilgiler yalnızca aynı odadaki oyuncuya anında iletilmek için sunucunun belleğinde, bağlantın sürdüğü kadar
+  durur; odadan çıkınca silinir. Diske, veritabanına ya da kayıt dosyasına yazılmaz. Serbest yazışma (sohbet) yoktur.
+  Her internet bağlantısında olduğu gibi, bağlantının kurulabilmesi için IP adresin barındırma altyapısı tarafından teknik
+  olarak işlenir; biz IP adresini saklamaz ya da kullanmayız.</p>
+
+  <h2>Liderlik tablosu</h2>
+  <p>Speedrun, Souls ya da Sonsuz modunda bir koşuyu bitirdiğinde oyun skorunu liderlik tablosuna gönderir. Gönderilenler
+  yalnızca şunlardır:</p>
+  <ul>
+    <li><strong>Oyuncu kimliği:</strong> oyunu ilk açtığında telefonunda rastgele üretilen 24 haneli bir sayı. Cihazına,
+      hesabına, reklam kimliğine ya da sana bağlı değildir; yalnızca tabloda kendi satırını tanımak için kullanılır.</li>
+    <li><strong>Takma ad:</strong> ya kendi yazdığın bir ad (3-16 karakter) ya da zar düğmesiyle oyunun hazır sözcüklerden
+      ürettiği bir ad (ör. "Neşeli Balina 6"). İstediğin zaman değiştirebilirsin. Tabloda herkes görür; <strong>gerçek
+      adını, soyadını ya da iletişim bilgini yazma.</strong></li>
+    <li><strong>Skor:</strong> tablonun adı (Speedrun, Souls, Sonsuz) ve en iyi değerin (süre ya da sayı) ile son
+      güncelleme zamanı.</li>
+  </ul>
+  <p>Bu bilgiler sunucuda, sen silene dek saklanır ve tabloda takma adınla birlikte herkese gösterilir. Başka oyuncuların
+  kimliği kimseye gönderilmez. Sunucuyu kötüye kullanıma karşı korumak için istek gönderen IP adresi yalnızca 10 dakika
+  boyunca bellekte sayılır, diske yazılmaz.</p>
+  <p><strong>Ad kuralları ve bildirme:</strong> Hakaret, küfür, nefret söylemi, cinsel içerik, başkasının kimliğine bürünme
+  ya da kişisel bilgi içeren adlar yasaktır. Yazılan adlar kötü söz süzgecinden geçer. Tabloda uygunsuz bir ad görürsen
+  yanındaki bayrağa dokunarak bildirebilirsin; bildirdiğin ad senin telefonunda hemen gizlenir. Bir ad iki farklı
+  oyuncu tarafından bildirilince herkes için gizlenir ve o oyuncu zarla üretilen adla görünür. Bildirimleri biz de
+  inceleriz; kuralları çiğneyen bir oyuncunun ad yazması kapatılabilir. Bir adı bildirdiğinde bildirilen ad, senin
+  oyuncu kimliğin ve tarih saklanır (aynı kişinin bir adı birden çok kez bildirmesini önlemek için); "Skorlarımı Sil"
+  bu kayıtları da siler.</p>
+  <p><strong>Kapatma ve silme:</strong> Liderlik ekranındaki "Skorlarımı Gönder" düğmesiyle göndermeyi kapatabilirsin.
+  "Skorlarımı Sil" düğmesi bütün tablolardaki skorlarını sunucudan hemen siler. Oyunu silmeden önce bunu yapmazsan,
+  yeni kurulumda yeni bir kimlik üretileceği için eski skorların sana bağlanamaz; o durumda silinmesini bize yazarak
+  isteyebilirsin.</p>
+
+  <h2>Paylaşım</h2>
+  <p>Hiçbir bilgiyi satmıyor, kiralamıyor ya da reklam veya pazarlama için kimseyle paylaşmıyoruz. Oyunda üçüncü taraf
+  reklam, analiz ya da izleme kitaplığı yoktur. Sunucu Render (render.com) üzerinde çalışır; liderlik skorları
+  bir veritabanı hizmetinde (ör. Neon, neon.tech) tutulabilir. Bu hizmetler bilgileri yalnızca bizim adımıza saklar.</p>
+
+  <h2>İzinler</h2>
+  <ul>
+    <li><strong>İnternet ve ağ durumu:</strong> yalnızca Arkadaşla Oyna ve liderlik tablosu için.</li>
+    <li><strong>Titreşim:</strong> dokunuşlarda hafif titreşim için; Ayarlar'dan kapatılabilir.</li>
+  </ul>
+
+  <h2>Çocuklar</h2>
+  <p>Oyun her yaştan oyuncuya uygundur ve kimseden, çocuklar dahil, adını, e-postasını ya da iletişim bilgisini istemez.
+  İnternetten oyun yalnızca oda kodunu bilen arkadaşlar arasında olur. Liderlik tablosunda yalnızca takma adlar
+  görünür; adlar süzülür, bildirilebilir ve gizlenebilir. Sohbet ya da mesajlaşma yoktur.</p>
+
+  <h2>Hakların</h2>
+  <p>Maç mesajlarını saklamayız. Liderlik tablosuna gönderdiğin skorları ve takma adını oyundaki "Skorlarımı Sil" düğmesiyle istediğin an
+  silebilirsin; silinmesini ya da hangi skorlarının tutulduğunu öğrenmeyi bize yazarak da isteyebilirsin. Telefonundaki oyun kaydını
+  oyunu silerek ya da uygulama verilerini temizleyerek her zaman silebilirsin.</p>
+
+  <h2>Değişiklikler</h2>
+  <p>Bu politika değişirse yeni hâli bu sayfada, üstteki tarihle birlikte yayımlanır.</p>
+
+  <h2>İletişim</h2>
+  <p>Sorularını şu adrese yazabilirsin: <span class="eposta">ILETISIM_EPOSTA</span></p>
+</main>
+</body>
+</html>
